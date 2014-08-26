@@ -3,7 +3,6 @@
 
 <h3>Answers</h3>
 
-
 <% @question.answers.each do |answer| %>
-  <div class="answer"><%= answer %></div>
+  <div class="answer"><%= answer.body %></div>
 <% end %>
