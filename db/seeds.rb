@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Question.create([
+ { title:'Rails Template is Missing', body:'I keep getting this error and I don\'t know what\'s wrong. :(' }
+])
