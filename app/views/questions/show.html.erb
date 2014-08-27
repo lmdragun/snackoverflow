@@ -2,12 +2,9 @@
 <h2><%= @question.title %></h2>
 <p><%= @question.body %></p>
 <br>
-<%= link_to 'Delete Question', question_path(@question), method: :delete %>
-<%= link_to 'Edit Question', edit_question_path(@question)%>
 
 <h3>Answers</h3>
 
-<%= link_to 'Add Answer', new_question_answer_path(@question) %>
 
 <% @question.answers.each do |answer| %>
   <div class="answer"><%= answer.body %></div>

@@ -1,8 +1,7 @@
 <h2>Questions</h2>
-<%= link_to "Add new question",new_question_path %>
 
 <ul>
 <% @questions.each do |question| %>
-  <li><%= link_to question.title, question %></li>
+  <li><%= question.title %></li>
 <% end %>
 </ul>
