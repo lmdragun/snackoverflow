@@ -1,5 +1,6 @@
 <h2><%= @question.title %></h2>
 <%= @question.body %>
+<%= link_to 'Delete Question', question_path(@question), method: :delete %>
 
 <h3>Answers</h3>
 
