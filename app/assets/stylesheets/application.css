@@ -73,4 +73,13 @@ input[type="submit"]{
   box-shadow: 5px 5px 0px #eee;
 }
 
-
+.errors{
+  margin:0;
+  padding:0;
+}
+.errors li{
+  background:red;
+  list-style:none;
+  padding:.5em;
+  color:#fff;
+}
