@@ -25,16 +25,25 @@ Change directories to snackoverflow and
 
 ## Part II
 
+creating new questions.
+
 ### link_to
 
 ### form_for
 
-### Error handling / flash
+### Strong Params
 
+### Error handling 
 
 ## Part III
 
-edit, delete
+Update and delete existing questions
+
+### edit
+
+### delete
+
+link_to, method: delete
 
 ## Part IV
 
