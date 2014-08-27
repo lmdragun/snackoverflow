@@ -10,6 +10,7 @@ Fork the repository and clone it to your local machine.
 
 Change directories to snackoverflow and
 
+    $ bundle install
     $ rake db:create
     $ rake db:migrate
     $ rake db:seed
