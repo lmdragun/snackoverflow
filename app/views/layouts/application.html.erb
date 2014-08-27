@@ -3,12 +3,16 @@
 <head>
   <title>Snackoverflow</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="wrapper">
+    <header>
+      <h1><%= link_to 'Snack Overflow', root_path %></h1>
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>
