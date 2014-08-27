@@ -5,6 +5,8 @@
 
 <h3>Answers</h3>
 
+<%= link_to 'Add Answer', new_question_answer_path(@question) %>
+
 <% @question.answers.each do |answer| %>
   <div class="answer"><%= answer.body %></div>
 <% end %>
