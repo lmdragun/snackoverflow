@@ -2,10 +2,18 @@
 <h2><%= @question.title %></h2>
 <p><%= @question.body %></p>
 <br>
-
+<%= link_to "Edit Question", edit_question_path( @question ) %>
+<%= link_to "Delete Question", question_path( @question ), method: :delete, data: {confirm: "Are you sure?"} %>
+<!-- No path in routes, because delete -->
 <h3>Answers</h3>
+
+<%= link_to 'Create New Answer', new_question_answer_path( @question ) %>
 
 
 <% @question.answers.each do |answer| %>
-  <div class="answer"><%= answer.body %></div>
+
+  <div class="answer"><%= answer.body %>
+    <%= link_to "Edit Answer", edit_question_answer_path( @question, answer ) %>
+    <%= link_to "Delete Answer", question_answer_path( @question, answer ), method: :delete %></div>
+
 <% end %>

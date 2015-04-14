@@ -1,7 +1,10 @@
 <h2>Questions</h2>
 
 <ul>
+  <li><%= link_to "Create New Question", new_question_path %></li>
 <% @questions.each do |question| %>
-  <li><%= question.title %></li>
+  <!-- <li><%= link_to question.title, "/questions/" + question.id.to_s %></li> -->
+  <li><%= link_to question.title, question_path( question ) %></li>
+  <!-- <li><%= link_to question.title, question_path( question.id ) %>, most likely it's looking for an ID already so that's why .id isn't necessary</li> -->
 <% end %>
 </ul>

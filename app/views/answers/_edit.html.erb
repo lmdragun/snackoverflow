@@ -1,0 +1,14 @@
+<% if @answer.errors.any? %>
+<!-- .errors is an AR method -->
+	<ul>
+	<% @answer.errors.full_messages.each do |err| %>
+			<li><%= err %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+<%= form_for [@question, @answer] do |f| %>
+	<% f.label :body %>
+	<%= f.text_field :body %>
+	<%= f.submit %>
+<% end %>
